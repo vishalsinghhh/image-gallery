@@ -7,6 +7,10 @@
 html{
   overflow-x: hidden;
 }
+.Dark{
+  background: #232323;
+  color: #fff;
+}
 .App {
   display: flex;
   flex-direction: column;

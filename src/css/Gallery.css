@@ -1,3 +1,4 @@
+
 .gallery {
   -webkit-column-count: 3;
   -moz-column-count: 3;
@@ -42,6 +43,10 @@
   justify-content: left;
   align-items: center;
 }
+.detailsDark{
+  background: #000;
+  border: 2px solid #000;
+}
 
 .details img {
   width: 40px;
@@ -49,7 +54,9 @@
   border-radius: 50%;
   background: none;
 }
-
+.userNameDark{
+  color: #fff !important;
+}
 .userName {
   font-family: Montserrat;
   font-size: 12px;

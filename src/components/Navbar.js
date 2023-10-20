@@ -6,7 +6,7 @@ import FormControlLabel from "@mui/material/FormControlLabel";
 import { BsSearch } from "react-icons/bs";
 import { RxHamburgerMenu } from "react-icons/rx";
 
-const Navbar = ({ onInputChange, onSubmit }) => {
+const Navbar = ({ onInputChange, onSubmit, onClickChange, light }) => {
   const [inputValue, setInputValue] = useState("");
   const handleInput = (event) => {
     const value = event.target.value;
@@ -18,7 +18,7 @@ const Navbar = ({ onInputChange, onSubmit }) => {
     }
   };
   return (
-    <div className="navbarMain">
+    <div className={!light ? "navbarMain":"navbarMain navbarMainDark"}>
       <div className="image cursor">Image Gallery</div>
       <div className="inputField">
         <div className="BsSearch">
@@ -41,7 +41,7 @@ const Navbar = ({ onInputChange, onSubmit }) => {
       </div>
       <div className="flex">
         <div className="mode">Dark Mode</div>
-        <div className="btn">
+        <div className="btn" onClick={()=>{onClickChange()}}>
           <FormGroup>
             <FormControlLabel control={<IOSSwitch sx={{ m: 1 }} />} />
           </FormGroup>

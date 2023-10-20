@@ -7,11 +7,15 @@ import Gallery from "./components/Gallery";
 function App() {
   const [data, setData] = useState();
   const [loading, setLoading] = useState(false);
+  const [light, setLight] = useState(false)
   const [inputValue, setInputValue] = useState("");
   const [inputValueSubNav, setInputValueSubNav] = useState("");
 
   const handleInputChange = (value) => {
     setInputValue(value);
+  };
+  const handleClickChange = () => {
+    setLight(!light);
   };
   const handleInputChangeSubNav = (value) => {
     setInputValueSubNav(value);
@@ -54,9 +58,9 @@ function App() {
   };
 
   return (
-    <div className="App">
+    <div className={!light ? "App":"App Dark"}>
       <div>
-        <Navbar onInputChange={handleInputChange} onSubmit={handleSubmit} />
+        <Navbar onInputChange={handleInputChange} onSubmit={handleSubmit} onClickChange={handleClickChange} light={light}/>
       </div>
       {loading && (
         <div className="loading">
@@ -69,7 +73,7 @@ function App() {
             <SubNav onInputChange={handleInputChangeSubNav} onSubmit={handleSubmit}/>
           </div>
           <div className="GalleryMain">
-            <Gallery data={data} />
+            <Gallery data={data} light={light}/>
           </div>
         </div>
       )}
