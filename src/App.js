@@ -49,7 +49,6 @@ function App() {
       setLoading(false);
     }
   };
-  console.log(data);
   const handleSubmit = (value) => {
     search(value);
   };
@@ -67,7 +66,7 @@ function App() {
       {!loading && (
         <div>
           <div className="SubNav">
-            <SubNav onInputChange={handleInputChangeSubNav} />
+            <SubNav onInputChange={handleInputChangeSubNav} onSubmit={handleSubmit}/>
           </div>
           <div className="GalleryMain">
             <Gallery data={data} />

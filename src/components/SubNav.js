@@ -1,15 +1,19 @@
-import React,{useState} from "react";
+import React, { useState } from "react";
 import back from "../static/back.svg";
 import "../css/Subnav.css";
 import { BsSearch } from "react-icons/bs";
 
-const SubNav = ({onInputChange}) => {
+const SubNav = ({ onInputChange, onSubmit }) => {
   const [inputValue, setInputValue] = useState("");
 
   const handleInput = (event) => {
     const value = event.target.value;
     setInputValue(value);
-    onInputChange(value); 
+    onInputChange(value);
+    if (event.key === "Enter") {
+      onSubmit(value);
+      setInputValue("");
+    }
   };
   return (
     <div className="subNav">
@@ -29,7 +33,9 @@ const SubNav = ({onInputChange}) => {
             type="text"
             placeholder="Search high resolution Images, categories, wallpapers"
             className="input"
-            onChange={handleInput} value={inputValue} 
+            onChange={handleInput}
+            value={inputValue}
+            onKeyPress={handleInput}
           />
         </div>
       </div>
