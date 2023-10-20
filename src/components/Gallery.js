@@ -9,20 +9,24 @@ const Gallery = (props) => {
       {props?.data?.map((item, i) => {
         return (
           <div key={i} className="pics">
-            <img src={item.urls.regular} alt="" style={{ width: "90%" }} />
-            <div className="details">
+            {item.urls.regular && (
               <div>
-                <img src={item.user.profile_image?.medium} alt="" />
+                <img src={item.urls.regular} alt="" style={{ width: "90%" }} />
+                <div className="details">
+                  <div>
+                    <img src={item.user.profile_image?.medium} alt="" />
+                  </div>
+                  <div>
+                    <div className="userName">{item.user?.name}</div>
+                    <div className="insta">{item.user?.instagram_username}</div>
+                  </div>
+                  <div className="like">
+                    <img src={like} alt="" />
+                    <div>{item.likes}</div>
+                  </div>
+                </div>
               </div>
-              <div>
-                <div className="userName">{item.user?.name}</div>
-                <div className="insta">{item.user?.instagram_username}</div>
-              </div>
-              <div className="like">
-                <img src={like} alt="" />
-                <div>{item.likes}</div>
-              </div>
-            </div>
+            )}
           </div>
         );
       })}
