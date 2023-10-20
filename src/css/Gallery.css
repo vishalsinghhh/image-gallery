@@ -91,11 +91,20 @@
     -moz-column-count: 2;
     column-count: 2;
   }
+  .gallery{
+    padding: 0 40px;
+  }
+  .details img {
+    margin: 5px;
+  }
 }
 @media screen and (max-width: 500px) {
   .gallery {
     -webkit-column-count: 1;
     -moz-column-count: 1;
     column-count: 1;
+  }
+  .gallery{
+    padding: 0 20px;
   }
 }
