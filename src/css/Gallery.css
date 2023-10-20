@@ -5,18 +5,86 @@
   -webkit-column-width: 33%;
   -moz-column-width: 33%;
   column-width: 33%;
-  padding: 0 12px;
+  padding: 0 80px;
 }
-.gallery .pics{
-    -webkit-transition: all 350ms ease;
-    transition: all 350ms ease;
-    cursor: pointer;
-    margin-bottom: 12px;
-    cursor: pointer;
+.gallery .pics {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  -webkit-transition: all 350ms ease;
+  transition: all 350ms ease;
+  cursor: pointer;
+  margin-bottom: 12px;
+  cursor: pointer;
 }
-.gallery .pics:hover{
-    filter: opacity(.8);
+.gallery .pics:hover {
+  filter: opacity(0.8);
 }
+
+.pics img {
+  /* width: 320px; */
+  margin: 20px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.details {
+  width: 90%;
+  height: 60px;
+  background: #fff;
+  border: 2px solid #e5e5e5;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin-top: -20px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.details img {
+  width: 40px;
+  margin: 10px;
+  border-radius: 50%;
+  background: none;
+}
+
+.userName {
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 15px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #4f4f4f;
+}
+.insta {
+  font-family: Poppins;
+  font-size: 10px;
+  font-style: italic;
+  font-weight: 600;
+  line-height: 15px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #a7a7a7;
+}
+.like{
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  right: 40px;
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 10px;
+}
+.like img{
+  width: 20px;
+  margin: 0px;
+  margin-right: 5px;
+  border-radius: 0px;
+}
+
 @media screen and (max-width: 991px) {
   .gallery {
     -webkit-column-count: 2;

@@ -4,6 +4,7 @@ import SubNav from "./components/SubNav";
 import { useEffect, useState } from "react";
 import Gallery from "./components/Gallery";
 
+
 function App() {
   const [data, setData] = useState()
 
