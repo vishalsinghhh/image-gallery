@@ -13,7 +13,7 @@ const Loading = () => {
   return (
     <div className="loadingAni">
       <div className="loadingMain">{View}</div>
-      <div>Loading some awesome Images...</div>
+      <div className="loadingContent">Loading some awesome Images...</div>
     </div>
   );
 };
