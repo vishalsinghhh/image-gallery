@@ -1,5 +1,6 @@
 import Navbar from "./components/Navbar";
 import Loading from "./components/Loading";
+import SubNav from "./components/SubNav";
 
 function App() {
   return (
@@ -8,7 +9,8 @@ function App() {
       <div>
         <Navbar />
       </div>
-      <div className="loading"><Loading/></div>
+      {/* <div className="loading"><Loading/></div> */}
+      <div><SubNav/></div>
       
     </div>
   );

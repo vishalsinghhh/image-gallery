@@ -8,11 +8,11 @@
   margin-left: 50px;
 }
 .navbarMain {
-    margin-top: 20px;
-    width: 100vw;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+  margin-top: 20px;
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   font-family: Montserrat;
   font-size: 12px;
   font-weight: 700;
@@ -21,10 +21,10 @@
   text-align: left;
 }
 .navbarMain input {
-  border: 1px solid #C4C4C4;
+  border: 1px solid #c4c4c4;
   border-radius: 5px;
   outline: none;
-  background: #ececec;
+  background: #f7f7f7;
   padding: 5px;
   width: 30vw;
   height: 40px;
@@ -34,64 +34,73 @@
 .navbarMain input:focus {
   outline: none;
 }
-.BsSearch{
-    position: absolute;
-    color: #C4C4C4;
-    font-size: 20px;
-    margin-left: 15px;
+.BsSearch {
+  position: absolute;
+  color: #c4c4c4;
+  font-size: 20px;
+  margin-left: 15px;
 }
-.inputField{
-    margin-left: -50px;
-    position: relative;
-    display: flex;
-    align-items: center;
+.inputField {
+  margin-left: -50px;
+  position: relative;
+  display: flex;
+  align-items: center;
 }
-.flex{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.btn{
-    margin-left: 20px;
+.btn {
+  margin-left: 20px;
 }
-.collection{
-    margin-left: 30px;
-    margin-right: 30px;
+.collection {
+  margin-left: 30px;
+  margin-right: 30px;
 }
-.cursor{
-    cursor: pointer;
+.cursor {
+  cursor: pointer;
 }
-.RxHamburgerMenu{
+.RxHamburgerMenu {
+  display: none;
+}
+::placeholder {
+  color: #c4c4c4;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 15px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+@media screen and (max-width: 1200px) {
+  .image {
+    margin-left: 0px;
+  }
+  .inputField {
+    margin-left: 0px;
+  }
+}
+@media screen and (max-width: 850px) {
+  .navBTN {
     display: none;
+  }
+  .RxHamburgerMenu {
+    display: block;
+    font-size: 30px;
+  }
 }
-@media screen and (max-width: 1200px){
-    .image{
-        margin-left: 0px;
-    }
-    .inputField{
-        margin-left: 0px;
-    }
-}
-@media screen and (max-width: 850px){
-    .navBTN{
-        display: none;
-    }
-    .RxHamburgerMenu{
-        display: block;
-        font-size: 30px;    
-    }
-}
-@media screen and (max-width: 650px){
-    .mode{
-        display: none;
-    }
-    .btn{
-        margin-left: 0px;
-    }
-    .image{
-        font-size: 18px;
-    }
-    .navbarMain input{
-        width: 40vw;
-    }
+@media screen and (max-width: 650px) {
+  .mode {
+    display: none;
+  }
+  .btn {
+    margin-left: 0px;
+  }
+  .image {
+    font-size: 18px;
+  }
+  .navbarMain input {
+    width: 40vw;
+  }
 }

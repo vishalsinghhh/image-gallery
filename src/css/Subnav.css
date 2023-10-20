@@ -1,0 +1,98 @@
+.back {
+  position: absolute;
+  width: 100vw;
+  margin-top: 30px;
+}
+.subNav {
+  position: relative;
+  width: 100vw;
+}
+.subContent {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 150px;
+  color: #fff;
+}
+.subContentTitle {
+  font-family: Montserrat;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 39px;
+  letter-spacing: -0.02em;
+  text-align: left;
+}
+.subContentSubTitle {
+  margin-top: 20px;
+  margin-bottom: 15px;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #c4c4c4;
+}
+.subContent input {
+  border: 1px solid #c4c4c4;
+  border-radius: 5px;
+  outline: none;
+  background: #fff;
+  padding: 5px;
+  width: 50vw;
+  height: 50px;
+  padding-left: 45px;
+  padding-right: 10px;
+}
+.flex1{
+    display: flex;
+    align-items: center;
+}
+@media screen and (max-width: 1200px){
+    .subContent{
+        top: 100px;
+    }
+}
+@media screen and (max-width: 1200px){
+    .subContent{
+        top: 75px;
+    }
+}
+@media screen and (max-width: 800px){
+    .subContent{
+        top: 75px;
+    }
+    .subContentTitle{
+        font-size: 28px;
+    }
+    .subContentSubTitle{
+        margin-top: 10px;
+    }
+}
+@media screen and (max-width: 700px){
+    .flex1{
+        display: none;
+    }
+    .subContentTitle{
+        font-size: 24px;
+    }
+    .subContentSubTitle{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 600px){
+    .subContentTitle{
+        font-size: 18px;
+        text-align: center;
+        line-height: 22px;
+    }
+    .subContent{
+        top: 60px;
+    }
+    .subContentSubTitle{
+        margin-top: 5px;
+        font-size: 10px;
+    }
+}
