@@ -7,6 +7,16 @@ import Gallery from "./components/Gallery";
 function App() {
   const [data, setData] = useState();
   const [loading, setLoading] = useState(false);
+  const [inputValue, setInputValue] = useState("");
+  const [inputValueSubNav, setInputValueSubNav] = useState("");
+
+  const handleInputChange = (value) => {
+    setInputValue(value);
+  };
+  const handleInputChangeSubNav = (value) => {
+    setInputValueSubNav(value);
+  };
+  console.log(inputValueSubNav);
 
   useEffect(() => {
     const fn = async () => {
@@ -27,11 +37,14 @@ function App() {
     fn();
   }, []);
   console.log(data);
+  const handleSubmit = (value) => {
+    console.log("Submitted: " + value);
+  };
 
   return (
     <div className="App">
       <div>
-        <Navbar />
+        <Navbar onInputChange={handleInputChange} onSubmit={handleSubmit}/>
       </div>
       {loading && (
         <div className="loading">
@@ -41,7 +54,7 @@ function App() {
       {!loading && (
         <div>
           <div className="SubNav">
-            <SubNav />
+            <SubNav  onInputChange={handleInputChangeSubNav}/>
           </div>
           <div className="GalleryMain">
             <Gallery data={data} />
