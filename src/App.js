@@ -16,13 +16,11 @@ function App() {
   const handleInputChangeSubNav = (value) => {
     setInputValueSubNav(value);
   };
-  console.log(inputValueSubNav);
 
   useEffect(() => {
     const fn = async () => {
       setLoading(true);
       try {
-        
         const res = await fetch(
           `https://api.unsplash.com/photos/?client_id=${process.env.REACT_APP_CLIENT_KEY}&per_page=20`
         );
@@ -36,15 +34,30 @@ function App() {
     };
     fn();
   }, []);
+
+  const search = async (value) => {
+    setLoading(true);
+    try {
+      const res = await fetch(
+        `https://api.unsplash.com/search/photos?query=${value}&client_id=${process.env.REACT_APP_CLIENT_KEY}&per_page=20`
+      );
+      const main = await res.json();
+      setData(main.results);
+      setLoading(false);
+    } catch (error) {
+      console.log(error);
+      setLoading(false);
+    }
+  };
   console.log(data);
   const handleSubmit = (value) => {
-    console.log("Submitted: " + value);
+    search(value);
   };
 
   return (
     <div className="App">
       <div>
-        <Navbar onInputChange={handleInputChange} onSubmit={handleSubmit}/>
+        <Navbar onInputChange={handleInputChange} onSubmit={handleSubmit} />
       </div>
       {loading && (
         <div className="loading">
@@ -54,7 +67,7 @@ function App() {
       {!loading && (
         <div>
           <div className="SubNav">
-            <SubNav  onInputChange={handleInputChangeSubNav}/>
+            <SubNav onInputChange={handleInputChangeSubNav} />
           </div>
           <div className="GalleryMain">
             <Gallery data={data} />
