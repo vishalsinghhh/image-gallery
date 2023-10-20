@@ -11,3 +11,10 @@
   justify-content: center;
   align-items: center;
 }
+.SubNav{
+  position: relative;
+}
+
+.GalleryMain{
+  margin-top: 20vw;
+}
