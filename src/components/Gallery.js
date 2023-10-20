@@ -6,6 +6,7 @@ import Modal from "./Modal";
 
 const Gallery = (props) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [user, setUser] = useState()
 
   const openModal = () => {
     setIsModalOpen(true);
@@ -17,14 +18,15 @@ const Gallery = (props) => {
   return (
     <div className="gallery">
     <Modal isOpen={isModalOpen} onClose={closeModal}>
-        <h2>Modal Content</h2>
-        <p>This is the content of the modal.</p>
+        <div className="modalMain">
+          <div><img src={user?.urls.regular} alt="" style={{ width: "70%" }}/></div>
+        </div>
       </Modal>
       {props?.data?.map((item, i) => {
         return (
           <div key={i} className="pics">
             {item.urls.regular && (
-              <div onClick={()=>{openModal()}}>
+              <div onClick={()=>{openModal(); setUser(item)}}>
                 <img src={item.urls.regular} alt="" style={{ width: "90%" }} />
                 <div className={!props?.light ? "details":"details detailsDark"}>
                   <div>
