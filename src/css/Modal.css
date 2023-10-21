@@ -42,9 +42,24 @@
   max-height: 90vh;
 }
 .detailsModal {
-    /* min-width: "50%" !important; */
-    max-width: 70% !important;
-    margin-left: 15%;
-    height: 50px;
-    background: #fff;
+  max-width: 70% !important;
+  margin-left: 15%;
+  height: 100px;
+  background: #fff;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin-top: -10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.modalImage {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.detailsModalMain{
+  position: absolute;
+  left: 0;
 }
