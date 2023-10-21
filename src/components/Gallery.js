@@ -6,6 +6,9 @@ import Modal from "./Modal";
 import cross from "../static/cross.svg";
 import insta from "../static/instagram.svg";
 import twitter from "../static/twitter.svg";
+import share from "../static/share.svg";
+import info from "../static/info.svg";
+import down from "../static/download.png"
 const Gallery = (props) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [user, setUser] = useState();
@@ -40,11 +43,31 @@ const Gallery = (props) => {
               </button>
             </div>
             <div className="detailsModal">
+              <div className="share">
+                <button>
+                  <img src={share} alt="" />
+                  Share
+                </button>
+              </div>
+              <div className="share info">
+                <button>
+                  <img src={info} alt="" />
+                  Info
+                </button>
+              </div>
+              <div className="download">
+                <button>
+                  <img src={down} alt="" />
+                  Info
+                </button>
+              </div>
+              <div className="info"></div>
               <div className="detailsModalMain">
                 <div>
                   <img src={user?.user.profile_image?.medium} alt="" />
                 </div>
                 <div>{user?.user.name}</div>
+                <div>{user?.user.username}</div>
                 <div>
                   <img src={insta} alt="" /> / {user?.user.instagram_username}
                 </div>

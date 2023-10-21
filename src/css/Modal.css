@@ -59,7 +59,51 @@
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
-.detailsModalMain{
+.detailsModalMain {
   position: absolute;
+  display: flex;
+  align-items: center;
   left: 0;
+}
+.share button {
+  cursor: pointer;
+  position: absolute;
+  top: -50px;
+  background: none;
+  border: 2px solid #ececec;
+  padding: 10px;
+  border-radius: 5px;
+  color: #ececec;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 10px;
+  letter-spacing: 0em;
+  text-align: center;
+  left: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 75px;
+}
+.share img{
+  width: 15px;
+  margin-right: 5px;
+}
+.info{
+  position: absolute;
+  left: 90px;
+  top: 0px;
+}
+.download button{
+  background: none; 
+  border: none;
+  cursor: pointer;
+  
+}
+.download img{
+  width: 30px;
+  position: absolute;
+  top: -50px;
+  right: 20px;
 }
