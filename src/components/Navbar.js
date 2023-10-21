@@ -40,7 +40,7 @@ const Navbar = ({ onInputChange, onSubmit, onClickChange, light }) => {
         </div>
       </div>
       <div className="flex">
-        <div className="mode">Dark Mode</div>
+        <div className="mode">{light ? "Light Mode":"Dark Mode"}</div>
         <div className="btn" onClick={()=>{onClickChange()}}>
           <FormGroup>
             <FormControlLabel control={<IOSSwitch sx={{ m: 1 }} />} />
