@@ -8,7 +8,7 @@ import insta from "../static/instagram.svg";
 import twitter from "../static/twitter.svg";
 import share from "../static/share.svg";
 import info from "../static/info.svg";
-import down from "../static/download.png"
+import down from "../static/download.png";
 const Gallery = (props) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [user, setUser] = useState();
@@ -29,7 +29,7 @@ const Gallery = (props) => {
             <img
               src={user?.urls.regular}
               alt=""
-              style={{ width: "70%" }}
+              style={{ width: "80%" }}
               className="modalImage"
             />
             <div>
@@ -58,21 +58,39 @@ const Gallery = (props) => {
               <div className="download">
                 <button>
                   <img src={down} alt="" />
-                  Info
                 </button>
               </div>
               <div className="info"></div>
               <div className="detailsModalMain">
-                <div>
+                <div className="modalImage">
                   <img src={user?.user.profile_image?.medium} alt="" />
                 </div>
-                <div>{user?.user.name}</div>
-                <div>{user?.user.username}</div>
                 <div>
-                  <img src={insta} alt="" /> / {user?.user.instagram_username}
+                  <div className="modalName">{user?.user.name}</div>
+                  <div className="modalUsername">@{user?.user.username}</div>
                 </div>
-                <div>
-                  <img src={twitter} alt="" /> / {user?.user.twitter_username}
+
+                <div className="socials socialInsta">
+                  <img src={insta} alt="" />/{user?.user.instagram_username}
+                </div>
+                <div className="socials">
+                  <img src={twitter} alt="" />/{user?.user.twitter_username}
+                </div>
+              </div>
+              <div className="like like1">
+                <img src={!props.light ? like1 : like} alt="" />
+                <div>{user?.likes}</div>
+              </div>
+              <div className="relatedTags">
+                Related Tags
+                <div className="relatedTagsMain">
+                  {user?.tags?.map((item) => {
+                    return (
+                      <div>
+                        <button>{item.title}</button>
+                      </div>
+                    );
+                  })}
                 </div>
               </div>
             </div>

@@ -29,7 +29,7 @@
   border: none;
   cursor: pointer;
   top: -20px;
-  right: 140px;
+  right: 100px;
 }
 .modalMain {
   display: flex;
@@ -42,9 +42,9 @@
   max-height: 90vh;
 }
 .detailsModal {
-  max-width: 70% !important;
-  margin-left: 15%;
-  height: 100px;
+  max-width: 80% !important;
+  margin-left: 10%;
+  height: 150px;
   background: #fff;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
@@ -63,7 +63,9 @@
   position: absolute;
   display: flex;
   align-items: center;
+  justify-content: left;
   left: 0;
+  top: 20px;
 }
 .share button {
   cursor: pointer;
@@ -86,24 +88,95 @@
   align-items: center;
   width: 75px;
 }
-.share img{
+.share img {
   width: 15px;
   margin-right: 5px;
 }
-.info{
+.info {
   position: absolute;
   left: 90px;
   top: 0px;
 }
-.download button{
-  background: none; 
+.download button {
+  background: none;
   border: none;
   cursor: pointer;
-  
 }
-.download img{
+.download img {
   width: 30px;
   position: absolute;
   top: -50px;
   right: 20px;
+}
+.modalImage img {
+  border-radius: 50%;
+  width: 50px;
+  margin-left: 20px;
+  margin-right: 10px;
+}
+.modalName {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #4f4f4f;
+}
+.socialInsta {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.modalUsername {
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: italic;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #a7a7a7;
+}
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: italic;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #a7a7a7;
+}
+.relatedTags{
+  position: absolute;
+  top: 80px;
+  left: 25px;
+  font-family: Montserrat;
+font-size: 12px;
+font-weight: 700;
+line-height: 15px;
+letter-spacing: 0em;
+text-align: left;
+color: #4F4F4F;
+}
+.relatedTagsMain {
+  display: flex;
+
+
+}
+.relatedTagsMain button {
+  font-family: Montserrat;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 12px;
+  letter-spacing: 0em;
+  text-align: center;
+  padding: 10px;
+  border: none;
+  margin: 5px;
+  border-radius: 5px;
+  color: #4F4F4F;
 }
