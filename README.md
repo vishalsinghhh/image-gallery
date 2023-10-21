@@ -1,70 +1,34 @@
-# Getting Started with Create React App
+# Image Gallery
+#### Description
+Image Gallery is a versatile and stylish website built using ReactJS and Material UI. This project allows users to fetch images from the Unsplash API, search for specific images using a search navbar, and seamlessly switch between light and dark modes. This website is designed to provide an excellent user experience with its beautiful UI design and a wide range of functionalities.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Status
+Success. Demo link is given below...
+<br/>
+<a href="" target="_blank">Link</a>
+<br/>
+Demo Video link is given below...
+<br/>
+<a href="" target="_blank">Link</a>
 
-## Available Scripts
+## Key Features
+- **Fetching Data from Unsplash API:** Image Gallery is powered by the Unsplash API, which provides access to a vast collection of high-quality, royalty-free images. You can easily fetch images to display in your gallery from this API, making it an excellent resource for photographers, designers, and content creators.
+- **Image Search:** The project includes a search navbar that enables users to search for specific images. This feature is useful for finding images that match specific keywords, themes, or subjects, allowing for easy customization of your gallery.
+- **Elegant UI Design:** Image Gallery boasts a visually appealing and user-friendly UI design, courtesy of Material UI. The design is carefully crafted to provide a pleasant and engaging experience for users. The layout and visual elements are thoughtfully designed to showcase your images in the best possible way.
+- **Light and Dark Mode:** Users can toggle between light and dark modes to suit their preferences or viewing conditions. The dark mode is easy on the eyes and particularly useful in low-light environments, while the light mode provides a classic and clean appearance.
 
-In the project directory, you can run:
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Getting Started
+Follow these steps to run the Chess App locally:
+1. **Clone the repository:** `git clone https://github.com/your-username/image-gallery.git` 
+2. **Open the project in your preferred code editor.**
+2. **Obtain an Unsplash API key by registering on the Unsplash developer platform. Replace `YOUR_API_KEY` in the code with your actual API key.**
+2. **Customize and configure the project to your liking, if necessary.**
+2. **Install the necessary dependencies using npm or yarn**`npm install` or `yarn install`
+2. **Run the application locally**`npm start` or `yarn yarn`
+2. **Start exploring the beautiful world of images on your locally hosted Image Gallery**
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Project Screen Shot(s)
+<img src="https://github.com/vishalsinghhh/image-gallery/assets/71393033/4d446fbf-a0e3-4877-9263-f478d960ba46" alt="" width="500"/> <img src="https://github.com/vishalsinghhh/image-gallery/assets/71393033/f8536774-1e46-4d7a-9697-cfb84b1e2c14" width="500"/> <img src="https://github.com/vishalsinghhh/image-gallery/assets/71393033/9751a600-d556-46ec-8472-43f33dad7081" width="500"/>
