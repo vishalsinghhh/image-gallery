@@ -26,7 +26,7 @@ function App() {
       setLoading(true);
       try {
         const res = await fetch(
-          `https://api.unsplash.com/photos/?client_id=${process.env.REACT_APP_CLIENT_KEY}&per_page=20`
+          `https://api.unsplash.com/photos/?client_id=yAAzUnGZo-xO8mVfyXXpgMDFCfblFt0gd62JmPub2QM&per_page=20`
         );
         const main = await res.json();
         setData(main);
@@ -43,7 +43,7 @@ function App() {
     setLoading(true);
     try {
       const res = await fetch(
-        `https://api.unsplash.com/search/photos?query=${value}&client_id=${process.env.REACT_APP_CLIENT_KEY}&per_page=20`
+        `https://api.unsplash.com/search/photos?query=${value}&client_id=yAAzUnGZo-xO8mVfyXXpgMDFCfblFt0gd62JmPub2QM&per_page=20`
       );
       const main = await res.json();
       setData(main.results);
