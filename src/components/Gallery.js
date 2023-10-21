@@ -21,7 +21,7 @@ const Gallery = (props) => {
         <div className="modalMain">
           <div className="modalDetails">
             <img src={user?.urls.regular} alt="" style={{ width: "70%" }} />
-            {/* <div> */}
+            <div>
               <button
                 onClick={() => {
                   setIsModalOpen(false);
@@ -30,7 +30,8 @@ const Gallery = (props) => {
               >
                 <img src={cross} alt="" />
               </button>
-            {/* </div> */}
+            </div>
+            <div className="detailsModal"></div>
           </div>
         </div>
       </Modal>
