@@ -42,7 +42,7 @@ const Gallery = (props) => {
                 <img src={cross} alt="" />
               </button>
             </div>
-            <div className="detailsModal">
+            <div className={!props.light?"detailsModal":"detailsModal detailsModalDark"}>
               <div className="share">
                 <button>
                   <img src={share} alt="" />
@@ -66,7 +66,7 @@ const Gallery = (props) => {
                   <img src={user?.user.profile_image?.medium} alt="" />
                 </div>
                 <div>
-                  <div className="modalName">{user?.user.name}</div>
+                  <div className={!props.light ? "modalName":"modalName darkMain"}>{user?.user.name}</div>
                   <div className="modalUsername">@{user?.user.username}</div>
                 </div>
 
@@ -81,7 +81,7 @@ const Gallery = (props) => {
                 <img src={!props.light ? like1 : like} alt="" />
                 <div>{user?.likes}</div>
               </div>
-              <div className="relatedTags">
+              <div className={!props.light ? "relatedTags":"relatedTags darkMain"}>
                 Related Tags
                 <div className="relatedTagsMain">
                   {user?.tags?.map((item) => {

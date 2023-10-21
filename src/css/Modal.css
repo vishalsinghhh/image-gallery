@@ -162,6 +162,12 @@ letter-spacing: 0em;
 text-align: left;
 color: #4F4F4F;
 }
+
+
+.darkMain{
+  color: #E5E5E5 !important;
+}
+
 .relatedTagsMain {
   display: flex;
 

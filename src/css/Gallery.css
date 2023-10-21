@@ -92,6 +92,10 @@
   margin-right: 5px;
   border-radius: 0px;
 }
+.detailsModalDark{
+  background: #232323 !important;
+ 
+}
 
 @media screen and (max-width: 991px) {
   .gallery {
