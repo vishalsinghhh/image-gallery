@@ -29,6 +29,5 @@ Follow these steps to run the Chess App locally:
 2. **Run the application locally**`npm start` or `yarn yarn`
 2. **Start exploring the beautiful world of images on your locally hosted Image Gallery**
 
-
 ## Project Screen Shot(s)
-<img src="https://github.com/vishalsinghhh/image-gallery/assets/71393033/4d446fbf-a0e3-4877-9263-f478d960ba46" alt="" width="500"/> <img src="https://github.com/vishalsinghhh/image-gallery/assets/71393033/f8536774-1e46-4d7a-9697-cfb84b1e2c14" width="500"/> <img src="https://github.com/vishalsinghhh/image-gallery/assets/71393033/9751a600-d556-46ec-8472-43f33dad7081" width="500"/>
+<img src="https://github.com/vishalsinghhh/image-gallery/assets/71393033/2f589ea8-898b-4dfd-9fe5-02f60ebeb2c1" alt="" width="500"/> <img src="https://github.com/vishalsinghhh/image-gallery/assets/71393033/951045c9-8cbf-449b-bc0f-d4b8054db2af" width="500"/> <img src="https://github.com/vishalsinghhh/image-gallery/assets/71393033/4578cb15-55ef-4958-8fb9-9a6dfa6042e9" width="500"/>
