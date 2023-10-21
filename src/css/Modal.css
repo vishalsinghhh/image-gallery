@@ -19,6 +19,9 @@
     align-items: center;
     text-align: center;
     background: none;
+
+  }
+  .modalDetails{
     position: relative;
   }
   .onClose{
