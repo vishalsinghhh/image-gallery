@@ -5,11 +5,11 @@ Image Gallery is a versatile and stylish website built using ReactJS and Materia
 ## Project Status
 Success. Demo link is given below...
 <br/>
-<a href="" target="_blank">Link</a>
+<a href="https://image-gallery-live.netlify.app/" target="_blank">Link</a>
 <br/>
 Demo Video link is given below...
 <br/>
-<a href="" target="_blank">Link</a>
+<a href="https://www.loom.com/share/53f8511abfef40ea9aa4b4f722fc054f?sid=ce9d4a93-b1b4-4033-92a6-ad03e1a1feb8" target="_blank">Link</a>
 
 ## Key Features
 - **Fetching Data from Unsplash API:** Image Gallery is powered by the Unsplash API, which provides access to a vast collection of high-quality, royalty-free images. You can easily fetch images to display in your gallery from this API, making it an excellent resource for photographers, designers, and content creators.
