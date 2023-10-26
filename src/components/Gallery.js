@@ -73,9 +73,9 @@ const Gallery = (props) => {
                 <div className="socials socialInsta">
                   <img src={insta} alt="" />/{user?.user.instagram_username}
                 </div>
-                <div className="socials">
+                {/* <div className="socials">
                   <img src={twitter} alt="" />/{user?.user.twitter_username}
-                </div>
+                </div> */}
               </div>
               <div className="like like1">
                 <img src={!props.light ? like1 : like} alt="" />
